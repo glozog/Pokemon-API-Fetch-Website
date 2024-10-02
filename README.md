@@ -23,7 +23,7 @@ To run this project locally, follow these steps:
 
  bash
 Copy code
-git clone https://github.com/glozog/pokemon-api-fetch.git
+git clone https://github.com/glozog/Pokemon-API-Fetch-Website.git
 
 # 2. Navigate to the project directory:
 
@@ -50,7 +50,5 @@ This project uses the Pokémon API, a free RESTful API that provides information
 
 Contributions are welcome! Feel free to fork this repository, create a new branch, and submit a pull request with your improvements.
 
-# License
 
-This project is licensed under the MIT License. See the LICENSE file for more information.
 
