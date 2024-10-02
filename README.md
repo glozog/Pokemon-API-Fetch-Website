@@ -39,13 +39,6 @@ Simply open the index.html file in any web browser to see the website in action.
 # API Reference
 This project uses the Pokémon API, a free RESTful API that provides information on Pokémon from the Pokémon series.
 
-# Project Structure
-
- ├── index.html        The main HTML file
- ├── style.css         CSS file for styling
- ├── script.js         JavaScript file for fetching API and handling DOM
- └── README.md         This README file
-
 # Contributions
 
 Contributions are welcome! Feel free to fork this repository, create a new branch, and submit a pull request with your improvements.
