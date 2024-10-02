@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: hwb(0 1% 95% / 0.74);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Pokéball animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+.pokeball {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #ff1a1a 0%, #ff1a1a 50%, #ffffff 50%, #ffffff 100%);
+    border: 4px solid #333;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+.pokeball::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 3px solid #333;
+    border-radius: 50%;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: #3d3d3d;
+    margin-bottom: 1.5rem;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.loading, .error {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.loading {
+    background-color: #e6f7ff;
+    color: #0066cc;
+}
+
+.error {
+    background-color: #ffe6e6;
+    color: #cc0000;
+}
+
+.pokemon-info {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pokemonSprite {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.info-text p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+}
