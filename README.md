@@ -9,6 +9,7 @@ This is a simple web application that fetches data from the Pokémon API and dis
 
 # Live Demo
 Check out the live demo of the project here.
+https://glozog.github.io/Pokemon-API-Fetch-Website/
 
 # Technologies Used
  HTML: Structure of the webpage.
